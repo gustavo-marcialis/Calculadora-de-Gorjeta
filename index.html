@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Gorjeta</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+	<header>
+		<nav class="navbar bg-light">
+			<span class="navbar-brand mb-0 h1">Calculadora de Gorjeta</span>
+		</nav>
+	</header><br>
+	
+	<div class="d-flex" style="justify-content: center;">
+		<div class="row">
+			<div class="col">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h3 class="card-title">Calcule a Gorjeta</h3>					
+					
+							<label>Valor Consumido (Separe centavos por <strong>PONTO</strong>, não use vírgula) </label>
+							<input class="form-control form-control-sm" id="consumo" step="0.01" name="consumo" value="" type="number" min="0.01" placeholder="Ex: 80.00"><br>
+							<label>Valor da Gorjeta (Em porcentagem. Use apenas os números, sem "%") </label>
+							<input class="form-control" id="gorjeta" name="gorjeta" value="" type="number" placeholder="Ex: 10"><br>
+							<button class="btn btn-primary" onclick="imc()">Calcular</button>				
+						</div>
+					</div>
+			</div>
+			<div class="col">
+					<div class="card" style="width: 18rem; height: 34rem;">
+						<div class="card-body">
+							<h3 class="card-title">Resultado</h3>					
+							<h6 class="bg-primary text-light" id="valorgorjeta"></h6>						
+							<h6 class="bg-primary text-light" id="resultado"></h6>														
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html
